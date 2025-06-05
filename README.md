@@ -1,3 +1,3 @@
 # Zadania
-Maciej Białowolski
+Maciej Białowolski  
 Zadania na Projektowanie oprogramowania
