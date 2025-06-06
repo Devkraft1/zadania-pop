@@ -1,0 +1,2 @@
+# Szyfr Cezara
+Wczytaj tekst oraz liczbę przesunięcia (np. 3). Zaszyfruj tekst, przesuwając każdą literę o podaną liczbę miejsc w alfabecie, zachowując wielkość liter oraz zawijając po 'Z' lub 'z' do początku alfabetu. Znaki inne niż litery pozostaw bez zmian. Na końcu wyświetl zaszyfrowany tekst.
