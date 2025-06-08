@@ -1,12 +1,11 @@
 #include <iostream>
-#include <unordered_map>
 #include <time.h>
 #include <string>
 using namespace std;
 
 int main()
 {
-    unordered_map<int, int> losy;
+    int losy[7] = {0};
     srand(time(NULL));
     int wylosowana;
     for(int i = 0; i < 1000; ++i)
@@ -27,16 +26,16 @@ int main()
         }
     }
     string wynik_najczestsza = "Najczestsza: ";
-    for(const auto& para : losy)
+    for(int i = 1; i<=6; ++i)
     {
-        if(para.second == najczestsza)
+        if(losy[i] == najczestsza)
         {
-           wynik_najczestsza += (to_string(para.first) + " "); 
+           wynik_najczestsza += (to_string(i) + " "); 
         }
     }
     cout << wynik_najczestsza << endl;
     int najrzadsza = losy[1];
-    for(int i = 2; i <= 6; ++i)
+    for(int i = 1; i <= 6; ++i)
     {
         if(losy[i]<najrzadsza)
         {
@@ -44,11 +43,11 @@ int main()
         }
     }
     string wynik_najrzadsza = "Najrzadsza: ";
-    for(const auto& para : losy)
+    for(int i = 1; i <= 6; ++i)
     {
-        if(para.second == najrzadsza)
+        if(losy[i] == najrzadsza)
         {
-            wynik_najrzadsza += (to_string(para.first) + " ");
+            wynik_najrzadsza += (to_string(i) + " ");
         }
     }
     cout << wynik_najrzadsza << endl;
